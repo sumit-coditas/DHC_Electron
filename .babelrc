@@ -1,0 +1,21 @@
+{
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "babel-plugin-transform-runtime",
+      "transform-async-to-generator",
+      "syntax-dynamic-import",
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"
+        }
+      ]
+    ]
+  }

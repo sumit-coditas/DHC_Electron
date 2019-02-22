@@ -1,0 +1,23 @@
+.user-profile-wrapper {
+    margin: 15px;
+
+    .user-description-wrapper {
+        width: 100%;
+        font-size: 15px;
+        display: inline-block;
+
+        .user-description-data-wrapper {
+            margin: 5px;
+
+            .user-description-data {
+                &.user-description-data-float {
+                    float: right;
+                }
+
+                span {
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}

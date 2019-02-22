@@ -1,0 +1,36 @@
+.scope-page-container {
+    .ant-collapse-content {
+        border-top: 1px solid #cccccc;
+    }
+    .ant-collapse-content-box{
+        padding: 0px;
+    }
+    .ant-collapse-item {
+        background: #fff;
+        margin-bottom: 20px;
+        padding: 6px 24px;
+        border: unset;
+        border-radius: 4px !important;
+        box-shadow: 0 1px 3.92px 0.08px rgba(0, 0, 0, 0.15);
+    } 
+    .ant-collapse-header{
+        font-size: 14px;
+        font-weight: 600;
+        // letter-spacing: 2px;
+    }
+    .collapse-panel {        
+        height: 500px;
+        overflow-y: scroll;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px 0px 10px;
+    }
+
+    .collapse-panel, .scroll-positions{
+        overflow-y: auto;
+        max-height: 500px;
+    }
+}

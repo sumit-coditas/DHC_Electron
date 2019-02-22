@@ -1,0 +1,22 @@
+
+logs
+*.log
+
+node_modules
+
+# Project
+.idea
+*.iml
+.DS_Store
+
+
+.env
+
+dist
+start-debug.bat
+npm-debug.log
+^npm-debug.log
+# .autodeploy-polar.yml
+# .gitlab-ci-polar.yml
+
+.vscode

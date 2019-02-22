@@ -1,0 +1,112 @@
+li.folder-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.folder-file-select {
+        font-family: calibri;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+}
+.team-header-container {
+    -webkit-box-shadow: 0 1px 3.92px 0.08px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 3.92px 0.08px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3.92px 0.08px rgba(0, 0, 0, 0.15);
+    .header-content-container {
+        .ant-collapse-header {
+            background: #FFF;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-size: 20px;
+                font-weight: 550;
+            }
+            >img {
+                width: 200px;
+                height: 75px;
+            }
+            .user-avatar {
+                img {
+                    height: 60px !important;
+                    width: 65px !important;
+                }
+            }
+        }
+        .ant-collapse-content-box {
+            padding: 0px 16px 16px 16px;
+        }
+        .filter-container {
+            color: #3cadd7;
+            display: flex;
+            margin: 6px 0 0 40px;
+            justify-content: flex-start;
+            >div {
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            .deselect {
+                color: #9e9dae
+            }
+        }
+        .team-group-container {
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            .team-group {
+                margin-left: 50px;
+                .group-header {
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px 0px 0 10px;
+                    margin-right: 3px;
+                    .title {
+                        color: white;
+                        font-weight: 600;
+                    }
+                    .workload-dropdown {
+                        height: inherit;
+                        .ant-select {
+                            width: 32px;
+                            background: inherit;
+                            border: 0 !important;
+                            height: 24px;
+                            .ant-select-selection  {
+                                background: inherit;
+                                border: 0;
+                                width: 32px;
+                                float: right;
+                                -webkit-box-shadow: none;
+                                box-shadow: none;
+                                height: inherit;
+                                .ant-select-selection__rendered {
+                                    display: none;
+                                }
+                                .ant-select-arrow {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .employee-avatar-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    // justify-content: space-between;
+                }
+            }
+        }
+    }
+}   
+
+.ant-select-dropdown {
+    width: 130px !important;
+}

@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "DHC",
+            "script": "npm",
+            "args": "run dev --kill-timeout 40000"
+        }
+    ]
+}

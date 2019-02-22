@@ -1,0 +1,46 @@
+.task-form-container {
+    .task-form-error-wrapper {
+        margin-bottom: 10px;
+    }
+    .add-scope {
+        font-size: 28px;
+        float: left;
+    }
+    .delete-scope-price {
+        font-size: 20px;
+        line-height: 10px;
+        color: #808080;
+        float: right;
+    }
+    .label-basic {
+        font-size: 0.92857143em !important;
+        border: 0 !important;
+        padding: 0 0 3px !important;
+    }
+    textarea {
+        min-height: 100px !important;
+    }
+    .engineer-differential {
+        background-color: #F2F2F2;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+    .drafter-differential {
+        background-color: #F3FAFC;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-right: 0.2em;
+        padding-left: 0.2em;
+        margin-left: 5px;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .Select-input {
+        padding: 0px
+    }
+}

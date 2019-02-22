@@ -1,0 +1,224 @@
+.template-header {
+    font-size: 15px;
+    background-color: #07ADD7;
+    // background-color: #4ca3bd;
+    color: #F4F4F4;
+    padding: 13px;
+    display: inline-block;
+    text-align: right;
+    font-weight: 600;
+}
+
+.template-delete-icon {
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+.archive-scope-button{
+    color: red;
+    float: right;
+    margin-left: 0px;
+}
+.add-rev-scope-button{
+    // float: right;
+    font-size: 18px;
+    padding-left: 5%;
+}
+.scope-box {
+    display: inline-block;
+    border-left: 3px solid #07ADD7;
+    padding-left: 10px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+
+    div {
+        font-size: 17px;
+    }
+
+    .scope-heading {
+        font-weight: 600;
+    }
+
+    .scope-text {
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.template-container {
+    display: inline-block;
+    margin: 10px 0 0;
+
+    .template-box {
+        margin-bottom: 10px;
+    }
+
+    .step {
+        max-width: 150px;
+        @media only screen and (max-width: 1366px) {
+            max-width: 120px;
+            line-height: 13px;
+        }
+    }
+}
+
+.step-complete {
+    background-color: #8CC341 !important;
+    color: #000000 !important;
+    width: 150px;
+    text-align: center;
+
+    .description {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+}
+
+.step-complete::after {
+    background-color: #8CC341 !important;
+}
+
+.step-incomplete {
+    background-color: #DB2828 !important;
+    color: #ffffff !important;
+    width: 150px;
+    text-align: center;
+
+    .description {
+        color: rgba(255, 255, 255, 0.7) !important;
+    }
+}
+
+.step-incomplete::after {
+    background-color: #DB2828 !important;
+}
+/** Compleate Step */
+.step-complete .content .title .scope-multi-select-wrapper .scope-multi-select .Select-control .Select-multi-value-wrapper .Select-value{
+    background-color: inherit !important;
+    border: none !important;
+    color: #000 !important;
+}
+.step-complete .content .title .scope-multi-select-wrapper .scope-multi-select .Select-control .Select-arrow-zone .Select-arrow {
+    border-color: #000 transparent transparent !important;
+}
+.step-complete .content .title .scope-multi-select-wrapper .Select.is-open > .Select-control .Select-arrow-zone .Select-arrow {
+    top: -2px;
+    border-color: transparent transparent #000 !important;
+    border-width: 0 5px 5px;
+}
+/** Incompleate Step */
+.step-incomplete .content .title .scope-multi-select-wrapper .scope-multi-select .Select-control .Select-multi-value-wrapper .Select-value{
+    background-color: inherit !important;
+    border: none !important;
+    color: #fff !important;
+}
+.step-incomplete .content .title .scope-multi-select-wrapper  .Select.is-open > .Select-control .Select-arrow-zone .Select-arrow {
+    top: -2px;
+    border-color: transparent transparent #fff !important;
+    border-width: 0 5px 5px;
+}
+.step-incomplete .content .title .scope-multi-select-wrapper .scope-multi-select .Select-control .Select-arrow-zone .Select-arrow {
+    border-color: #fff transparent transparent !important;
+}
+.option-menu{
+    background-color: #FF8C00 !important;
+    color: #000000;
+    font-weight: bolder;
+    border-bottom: 1px solid #fff;
+}
+.scope-multi-select .Select-control .Select-multi-value-wrapper .Select-value .Select-value-icon{
+    display: none !important;
+}
+.scope-multi-select .Select-control .Select-multi-value-wrapper .Select-value .Select-value-label{
+    padding: 6px 0px !important;
+}
+.scope-multi-select .Select-control .Select-multi-value-wrapper .Select-input{
+    display: none !important;
+}
+.scope-multi-select .Select-menu-outer .Select-menu .is-selected{
+    font-weight: 800;
+    color: #fff;
+    background-color: #FF8C00;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+.step-hold {
+    background-color: #FF8C00 !important;
+    color: #000000 !important;
+    width: 150px;
+    text-align: center;
+
+    .description {
+        color: #000000 !important;
+    }
+}
+
+.step-hold::after {
+    background-color: #FF8C00 !important;
+}
+
+
+.step-container {
+    height: 45px;
+    margin: 0 !important;
+    border-radius: 0rem !important;
+    border: unset !important;
+    // border-bottom: 1px solid #f4fafc !important;
+}
+.step-custom-header {
+    width: 149px;
+    background-color: #D0D0D0 !important;
+    border-radius: 0 0 0 0 !important;
+
+}
+.custom-step-group{
+    border: none !important;
+    margin-bottom: 1px !important;
+}
+
+.layoutRow{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+
+.alignBetween{
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.scope-multi-select-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-flow: row;
+    white-space: nowrap;
+}
+.scope-multi-select{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+    width: max-content;
+}
+.max-content-width .content .title .scope-multi-select-wrapper .scope-multi-select .Select-menu-outer {
+    z-index: 3;
+    width: 75px !important;
+}
+.scope-multi-select .Select-menu-outer {
+    z-index: 3;
+}
+
+.scope-multi-select .Select-menu-outer .Select-menu .Select-option.is-selected {
+    font-weight: 800;
+}
+.ui.form input:not([type]){
+    border:none;
+}
+.max-content-width{
+    // max-width: max-content;
+    // min-width: 150px;
+    width: max-content;
+    min-width: 183px !important;
+}
