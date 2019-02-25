@@ -2,12 +2,11 @@
 'use strict';
 
 // Import parts of electron to use
-const { app, BrowserWindow, session } = require('electron');
+const { app, BrowserWindow, session, protocol, ipcMain } = require('electron');
 const path = require('path');
 const {shell} = require('electron');
 // var remote = require('electron').remote;
 // var shell = remote.shell;
-const {ipcMain} = require('electron');
 const url = require('url');
 const axios = require('axios');
 const { localStorage } = require('electron-browser-storage');
@@ -66,7 +65,6 @@ autoUpdater.on('update-downloaded', (info) => {
 });
 
 let mainWindow;
-mainWindow.webContents.openDevTools();
 // Keep a reference for dev mode
 let dev = false;
 
@@ -176,7 +174,7 @@ function createWindow() {
             });
         }
     });
-
+    mainWindow.webContents.openDevTools();
 }
 
 
