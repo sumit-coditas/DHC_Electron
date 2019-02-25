@@ -14,15 +14,15 @@ const { localStorage } = require('electron-browser-storage');
 const { autoUpdater } = require("electron-updater")
 
 
-// require('update-electron-app')
-// ({
-//     // repo: 'https://gitlab.com/dhc-plp/DHC/tree/new-electron-app',
-//     updateInterval: '5 minute',
-//     logger: require('electron-log')
-//   })
+require('update-electron-app')
+({
+    repo: 'https://github.com/sumit-coditas/DHC_Electron',
+    updateInterval: '5 minute',
+    // logger: require('electron-log')
+  })
 
 let mainWindow;
-
+mainWindow.webContents.openDevTools();
 // Keep a reference for dev mode
 let dev = false;
 
