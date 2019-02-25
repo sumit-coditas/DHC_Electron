@@ -11,15 +11,59 @@ const {ipcMain} = require('electron');
 const url = require('url');
 const axios = require('axios');
 const { localStorage } = require('electron-browser-storage');
-const { autoUpdater } = require("electron-updater")
+const log = require('electron-log');
+const {autoUpdater} = require("electron-updater");
 
 
-require('update-electron-app')
-({
-    repo: 'https://github.com/sumit-coditas/DHC_Electron',
-    updateInterval: '5 minute',
-    // logger: require('electron-log')
-  })
+autoUpdater.logger = log;
+autoUpdater.logger.transports.file.level = 'info';
+log.info('App starting...');
+
+
+
+// require('update-electron-app')
+// ({
+//     repo: 'https://github.com/sumit-coditas/DHC_Electron',
+//     updateInterval: '5 minute',
+//     logger: require('electron-log')
+//   })
+
+let win;
+
+function sendStatusToWindow(text) {
+  log.info(text);
+  win.webContents.send('message', text);
+}
+function createDefaultWindow() {
+  win = new BrowserWindow();
+  win.webContents.openDevTools();
+  win.on('closed', () => {
+    win = null;
+  });
+  win.loadURL(`file://${__dirname}/version.html#v${app.getVersion()}`);
+  return win;
+}
+autoUpdater.on('checking-for-update', () => {
+  sendStatusToWindow('Checking for update...');
+})
+autoUpdater.on('update-available', (info) => {
+  sendStatusToWindow('Update available.');
+})
+autoUpdater.on('update-not-available', (info) => {
+  sendStatusToWindow('Update not available.');
+})
+autoUpdater.on('error', (err) => {
+  sendStatusToWindow('Error in auto-updater. ' + err);
+})
+autoUpdater.on('download-progress', (progressObj) => {
+  let log_message = "Download speed: " + progressObj.bytesPerSecond;
+  log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
+  log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
+  sendStatusToWindow(log_message);
+})
+autoUpdater.on('update-downloaded', (info) => {
+  sendStatusToWindow('Update downloaded');
+});
 
 let mainWindow;
 mainWindow.webContents.openDevTools();
@@ -55,6 +99,8 @@ const filter = {
 
 
 function createWindow() {
+
+    autoUpdater.checkForUpdatesAndNotify();
     // Create the browser window.
     mainWindow = new BrowserWindow({
         width: 1024,
