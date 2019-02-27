@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "dhc",
   "description": "dhc deskto_App",
   "version": "1.0.3",
@@ -156,24 +155,4 @@
     "why-did-you-update": "^0.1.0"
   },
   "license": "MIT"
-=======
-    "name": "dhc",
-    "version": "1.0.2",
-    "author": "sumit-coditas",
-    "homepage": "./",
-    "description": "dhc desktop_app",
-    "repository": "https://github.com/sumit-coditas/DHC_Electron",
-    "main": "electron.js",
-    "dependencies": {
-        "electron-updater": "^2.18.2"
-    },
-    "scripts": {
-        "build": "build --win",
-        "ship": "build --win -p always"
-    },
-    "devDependencies": {
-        "electron": "^1.7.5",
-        "electron-builder": "^19.20.1"
-    }
->>>>>>> 18df3745eff6a5a5b841c23cead57e7f44ff9a24
 }
