@@ -4,7 +4,7 @@
     "author": "sumit-coditas",
     "homepage": "./",
     "description": "dhc desktop_app",
-    "repository": "https://github.com/sumit-coditas/DHC_Electron",
+    "repository": "https://github.com/ZaninAndrea/electron-autoupdate-example",
     "main": "electron.js",
     "dependencies": {
         "electron-updater": "^2.18.2"
