@@ -1,7 +1,22 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 import { IndexRoute, Route } from 'react-router';
-
+import Home from './components/views/Home.js';
+import CompletedScopePage from './components/views/completedScopePage/';
+import Permission from './components/configuration/Permission.js';
+import AppSetting from './components/configuration/AppSetting.js';
+import CustomerProfile from './components/configuration/CustomerProfile';
+import PersonalUpdate from  './components/configuration/PersonalUpdate.js';
+import RoleConfiguration from './components/configuration/RoleConfiguration.js';
+import RoleLevel from './components/configuration/RoleLevel.js';
+import Roles from './components/configuration/Roles.js';
+import Users from './components/configuration/User.js';
+import WorkBoard from './components/configuration/WorkBoard.js';
+import Reports from './components/views/reports/Reports.js';
+import ActiveHoldPage from './components/views/activeHoldPage/';
+import SentInvoicePage from './components/views/SentInvoicePage/';
+import UninvoicedPage from './components/views/UninvoicedPage/';
+import UserProfile from './components/views/UserProfile.js';
 import AppAction from './actions/AppAction.js';
 import LoginAction from './actions/LoginAction.js';
 import { App } from './components/App.js';
@@ -62,85 +77,85 @@ function Loading({ error }) {
   }
 }
 
-const Home = Loadable({
-  loader: () => import('./components/views/Home.js'),
-  loading: LoginLoader
-});
+// const Home = Loadable({
+//   loader: () => import('./components/views/Home.js'),
+//   loading: LoginLoader
+// });
 
-const CompletedScopePage = Loadable({
-  loader: () => import('./components/views/completedScopePage/'),
-  loading: LoginLoader
-});
+// const CompletedScopePage = Loadable({
+//   loader: () => import('./components/views/completedScopePage/'),
+//   loading: LoginLoader
+// });
 
-const Permission = Loadable({
-  loader: () => import('./components/configuration/Permission.js'),
-  loading: LoginLoader
-});
+// const Permission = Loadable({
+//   loader: () => import('./components/configuration/Permission.js'),
+//   loading: LoginLoader
+// });
 
-const AppSetting = Loadable({
-  loader: () => import('./components/configuration/AppSetting.js'),
-  loading: LoginLoader
-});
+// const AppSetting = Loadable({
+//   loader: () => import('./components/configuration/AppSetting.js'),
+//   loading: LoginLoader
+// });
 
-const CustomerProfile = Loadable({
-  loader: () => import('./components/configuration/CustomerProfile'),
-  loading: LoginLoader
-});
+// const CustomerProfile = Loadable({
+//   loader: () => import('./components/configuration/CustomerProfile'),
+//   loading: LoginLoader
+// });
 
-const PersonalUpdate = Loadable({
-  loader: () => import('./components/configuration/PersonalUpdate.js'),
-  loading: LoginLoader
-});
+// const PersonalUpdate = Loadable({
+//   loader: () => import('./components/configuration/PersonalUpdate.js'),
+//   loading: LoginLoader
+// });
 
-const RoleConfiguration = Loadable({
-  loader: () => import('./components/configuration/RoleConfiguration.js'),
-  loading: LoginLoader
-});
+// const RoleConfiguration = Loadable({
+//   loader: () => import('./components/configuration/RoleConfiguration.js'),
+//   loading: LoginLoader
+// });
 
-const RoleLevel = Loadable({
-  loader: () => import('./components/configuration/RoleLevel.js'),
-  loading: LoginLoader
-});
+// const RoleLevel = Loadable({
+//   loader: () => import('./components/configuration/RoleLevel.js'),
+//   loading: LoginLoader
+// });
 
-const Roles = Loadable({
-  loader: () => import('./components/configuration/Roles.js'),
-  loading: LoginLoader
-});
+// const Roles = Loadable({
+//   loader: () => import('./components/configuration/Roles.js'),
+//   loading: LoginLoader
+// });
 
-const Users = Loadable({
-  loader: () => import('./components/configuration/User.js'),
-  loading: LoginLoader
-});
+// const Users = Loadable({
+//   loader: () => import('./components/configuration/User.js'),
+//   loading: LoginLoader
+// });
 
-const WorkBoard = Loadable({
-  loader: () => import('./components/configuration/WorkBoard.js'),
-  loading: LoginLoader
-});
+// const WorkBoard = Loadable({
+//   loader: () => import('./components/configuration/WorkBoard.js'),
+//   loading: LoginLoader
+// });
 
-const Reports = Loadable({
-  loader: () => import('./components/views/reports/Reports.js'),
-  loading: LoginLoader
-});
+// const Reports = Loadable({
+//   loader: () => import('./components/views/reports/Reports.js'),
+//   loading: LoginLoader
+// });
 
-const ActiveHoldPage = Loadable({
-  loader: () => import('./components/views/activeHoldPage/'),
-  loading: LoginLoader
-});
+// const ActiveHoldPage = Loadable({
+//   loader: () => import('./components/views/activeHoldPage/'),
+//   loading: LoginLoader
+// });
 
-const SentInvoicePage = Loadable({
-  loader: () => import('./components/views/SentInvoicePage/'),
-  loading: LoginLoader
-});
+// const SentInvoicePage = Loadable({
+//   loader: () => import('./components/views/SentInvoicePage/'),
+//   loading: LoginLoader
+// });
 
-const UninvoicedPage = Loadable({
-  loader: () => import('./components/views/UninvoicedPage/'),
-  loading: LoginLoader
-});
+// const UninvoicedPage = Loadable({
+//   loader: () => import('./components/views/UninvoicedPage/'),
+//   loading: LoginLoader
+// });
 
-const UserProfile = Loadable({
-  loader: () => import('./components/views/UserProfile.js'),
-  loading: LoginLoader
-});
+// const UserProfile = Loadable({
+//   loader: () => import('./components/views/UserProfile.js'),
+//   loading: LoginLoader
+// });
 
 //   const LoginLoader = Loadable({
 //     loader: () => import('./components/widgets/LoginLoader.js'),
