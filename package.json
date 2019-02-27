@@ -1,10 +1,10 @@
 {
     "name": "dhc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "sumit-coditas",
     "homepage": "./",
     "description": "dhc desktop_app",
-    "repository": "https://github.com/ZaninAndrea/electron-autoupdate-example",
+    "repository": "https://github.com/sumit-coditas/DHC_Electron",
     "main": "electron.js",
     "dependencies": {
         "electron-updater": "^2.18.2"
