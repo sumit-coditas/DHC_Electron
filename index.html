@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Electron AutoUpdater</title>
+    <title>Project List Pro</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             container.innerHTML = "new version ready!";
         })
     </script>
-    Version: <span id="version">v0.1.10</span>
+    Version: <span id="version">v1.0.0</span>
     <!-- the button onClick sends a quitAndInstall message to the electron main process -->
     <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
 
