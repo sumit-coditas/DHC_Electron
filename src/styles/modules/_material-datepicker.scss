@@ -1,0 +1,20 @@
+.date {
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    height: 38px;
+    padding: 0 14px;
+
+    div:first-child {
+        font-size: 15px !important;
+        width: 100% !important;
+        height: 38px !important;
+
+        div:first-child {
+            display: none;
+        }
+    }
+
+    hr {
+        display: none;
+    }
+}

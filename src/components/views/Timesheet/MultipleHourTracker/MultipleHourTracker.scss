@@ -1,0 +1,35 @@
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .hourtracker-row {
+        margin-bottom: 10px;
+        .multiple-hours-checkbox-wrapper {
+            margin: auto 0;
+            .multiple-hours-checkbox {
+                .ant-form-item {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+        .filled-icons-wrapper {
+            margin: auto 0;
+            .filled-icon {
+                font-size: 24px;
+                color: #1890ff;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+        }
+    }
+    .section-sum {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: bold;
+
+    }
+    .section-sum > span {
+        flex: 0 0 37%;
+    }
+}

@@ -1,0 +1,162 @@
+.header-top {
+    position: relative;
+    height: auto;
+    min-height: 55px;
+    border-bottom: 1px solid $light-grey;
+    background-color: $white;
+    .group-header-label {
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 3px;
+        &.task-group-header-label {
+            cursor: auto;
+        }
+        .fa {
+            &.compress-icon {
+                margin-right: 4px;
+                color: #07add7;
+                font-size: 20px;
+                line-height: 20px;
+                text-decoration: none;
+            }
+        }
+        .team-header-caret {
+            position: relative;
+            top: 5px;
+            float: right;
+            font-family: Fontawesome, sans-serif;
+            color: #07add7;
+            font-size: 17px;
+            line-height: 16px;
+            padding-left: 5px;
+            text-decoration: none;
+        }
+    }
+    .team-modal-content-wrap {
+        overflow: auto;
+        background-color: #f2f2f2;
+        .tools-wrap {
+            margin-bottom: 15px;
+            padding-right: 28px;
+            width: 100%;
+            background-color: #f2f2f2;
+            display: inline-block;
+            border-top: 1px solid $light-grey;
+            .sort-by-wrap {
+                display: inline-block;
+                margin-top: 20px;
+                .sort-by-label {
+                    display: inline-block;
+                    margin-left: 40px;
+                }
+                .sort-dropdown {
+                    z-index: 920;
+                    display: inline-block;
+                    .sort-dropdown-toggle {
+                        margin-left: 10px;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        border-bottom: 2px solid #07add7;
+                    }
+                    .dropdown-list.sort-list.w--open {
+                        top: 23px;
+                        .dropdown-link {
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            &:hover {
+                                background-color: #f1f1f1;
+                            }
+                        }
+                    }
+                }
+            }
+            .team-tool-links-wrap {
+                display: inline-block;
+                float: right;
+                margin-top: 20px;
+                .team-tool-links {
+                    margin-right: 16px;
+                    color: #07add7;
+                    font-size: 13px;
+                    text-decoration: none;
+                    &.team-tools-gray {
+                        color: #979797;
+                    }
+                    .fa.team-tools-icon {
+                        margin-right: 4px;
+                        font-size: 10px;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+        .team-header-section {
+            padding-bottom: 14px;
+            padding-right: 20px;
+            padding-left: 40px;
+            background-color: #f2f2f2;
+            min-height: 272px; // .ui.grid {
+            //     display: flex;
+            //     justify-content: space-between;
+            // }
+            .team-header-section-text {
+                position: absolute;
+                top: 50%;
+                text-transform: capitalize;
+                left: 50%;
+                font-size: 22px;
+            }
+            .team-avatar-group-wrapper {
+                min-width: 117px;
+                width: auto;
+                max-width: 600px;
+                padding-left: 0.3rem;
+                padding-right: 0.3em;
+                margin-right: 49px;
+                &:last-child {
+                    margin-right: 0
+                }
+            }
+        }
+        .team-header-section {
+            .team-avatar-group-wrapper {
+                &:nth-child(1) {
+                    max-width: 154px;
+                }
+                &:nth-child(2) {
+                    max-width: 733px;
+                }
+                &:nth-child(3) {
+                    max-width: 526px;
+                }
+                &:nth-child(4) {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .nav-dropdown-toggle {
+        padding-right: 20px;
+    }
+    .nav-dropdown-wrap {
+        margin-left: 0;
+    }
+    .header-top {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .team-header-section {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-top {
+        height: 0%;
+    }
+}

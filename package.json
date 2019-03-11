@@ -1,23 +1,24 @@
 {
   "name": "dhc",
   "description": "dhc deskto_App",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "sumit.singh@coditas.com",
   "repository": "https://github.com/sumit-coditas/DHC_Electron",
   "engines": {
     "node": "10.6.0",
     "npm": "6.1.0"
   },
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
     "prod": "webpack --mode production --config webpack.build.config.js --progress && electron --noDevServer .",
+    "ftp": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
     "package-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=false --out=release-builds --darwinDarkModeSupport=true",
     "package-win": "electron-packager . dhc --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/favicon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"DHC\"",
     "package-linux": "electron-packager . dhc --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=false --out=release-builds",
     "create-installer-mac": "electron-installer-dmg ./release-builds/dhc-darwin-x64/dhc.app dhc --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns",
     "create-installer-win": "node installers/windows/createinstaller.js",
     "build": "build --win",
-    "ship": "build --win -p always"
+    "ship": "webpack --mode production --config webpack.build.config.js --progress && npm run build --win"
   },
   "dependencies": {
     "@bugsnag/js": "^5.2.0",
@@ -92,7 +93,6 @@
     "slack": "~8.2.0",
     "socket.io": "~2.0.1",
     "ssh2": "~0.5.4",
-    "update-electron-app": "^1.3.0",
     "url-loader": "^1.0.1",
     "uuid": "~3.0.1",
     "webpack-bugsnag-plugins": "^1.2.2",
@@ -113,9 +113,9 @@
     "css-loader": "^0.28.11",
     "electron": "^4.0.5",
     "electron-installer-dmg": "^2.0.0",
-    "electron-packager": "^13.1.0",
-    "electron-builder": "^19.20.1",
+    "electron-packager": "^12.2.0",
     "electron-winstaller": "^2.7.0",
+    "electron-builder": "^19.20.1",
     "eslint": "^4.19.1",
     "html-webpack-plugin": "^3.2.0",
     "immutable": "^4.0.0-rc.12",

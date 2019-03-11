@@ -1,0 +1,28 @@
+div.calendar {
+    padding: 20px;
+
+    > div {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .ui.celled.list {
+        margin-top: 0;
+    }
+
+    .ui.celled.list .item {                                     
+        border: 1px solid #D4D4D5;
+    }
+}
+.margin0 {
+    margin: 0px !important;
+    .big-calender .rbc-btn-group {
+        button:nth-child(4n) {
+            display: none;
+        }
+    }
+}
+.calender-padding{
+    padding: 12px 24px;
+    background: #f2f4f8 !important;
+}
